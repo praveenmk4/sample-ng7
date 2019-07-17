@@ -10,11 +10,7 @@ export class HomeComponent implements OnInit {
   constructor(private data:DataService) { }
 
   ngOnInit() {//angular life cycle hook
-    this.data.getUsers().subscribe(data =>{
-      this.users = data;
-   
-      
-    })
+ 
 
   }
  

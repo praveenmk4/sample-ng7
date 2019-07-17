@@ -1,7 +1,10 @@
-<h1>Home</h1>
-<ul *ngIf ="users">
-  <li *ngFor = "let user of users.data">
-    <img [src] = "user.avatar">
-    <p>{{user.first_name}} {{user.last_name}}</p>
-  </li>
-</ul>
+
+<mat-grid-list cols="2" id="home">
+  <mat-grid-tile  class="Dc">
+    <button mat-button routerLink="/dc"><img src="../../assets/Dc.jpg"  ></button>
+  </mat-grid-tile>
+  <mat-grid-tile class="Marvel" >
+ <!--  <button mat-button routerLink="app-marvel"></button> -->  
+  <a mat-button routerLink="/marvel"><img src="../../assets/Marvel2.png"  ></a>
+  </mat-grid-tile>
+</mat-grid-list>

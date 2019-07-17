@@ -8,6 +8,11 @@ import { NavComponent } from './nav/nav.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatNativeDateModule} from '@angular/material';
+import {MaterialModule} from './material.module';
+import { MarvelComponent } from './marvel/marvel.component';
+import { DcComponent } from './dc/dc.component';
 
 @NgModule({
   declarations: [
@@ -15,13 +20,18 @@ import { HomeComponent } from './home/home.component';
     NavComponent,
     AboutComponent,
     ContactComponent,
-    HomeComponent
+    HomeComponent,
+    MarvelComponent,
+    DcComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    MaterialModule,
+    MatNativeDateModule
   ],
   providers: [],
   bootstrap: [AppComponent]

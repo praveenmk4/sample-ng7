@@ -6,8 +6,8 @@ import { HttpClient } from '@angular/common/http';
 export class DataService {
 
   constructor(private http: HttpClient) { }
-  getUsers (){
-  return this.http.get('https://reqres.in/api/users') ;
-    
+
+  getHeroDetails(id){
+  return  this.http.get('https://superheroapi.com/api/2302129843386059/'+id)
   }
 }
