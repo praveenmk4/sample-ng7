@@ -8,6 +8,7 @@ import { DataService} from '../data.service';
 })
 export class MarvelComponent implements OnInit {
   users:Object;
+  tiles = [];
    usersList =[{
     617:'Spider-Carnage',
     618:'Spider-Girl',
@@ -27,13 +28,29 @@ export class MarvelComponent implements OnInit {
         
       }
     ); */
-    this.data.getHeroDetails(this.id).subscribe(
+ /*    this.data.getHeroDetails(this.id).subscribe(
       data =>{
         this.users = data;
         console.log(data);
         
       }
-    );
+    ); */
+    this.tiles = [{
+      name :'Spider Man',
+      imageSrc :'../../assets/spider.jpg'      
+    },{
+      name :'Iron Man',
+      imageSrc :'../../assets/stark.jpg'      
+    },{
+      name :'Thor',
+      imageSrc :'../../assets/thor.jpg'      
+    },{
+      name :'Captain America',
+      imageSrc :'../../assets/capitan.jpg'      
+    },{
+      name :'Hulk',
+      imageSrc :'../../assets/hulk.jpg'      
+    }];
   }
 
 }
